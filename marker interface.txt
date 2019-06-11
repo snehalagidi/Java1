@@ -1,0 +1,22 @@
+//Marker interface
+public interface I{
+
+}
+
+public class MyClass1 extends MyClass implements I{
+....
+
+}
+
+public class YourClass1 extends YourClass implements I{
+
+}
+
+//using marker interface as datatype
+I myInterface[]=new I[2];
+myInterface[0]=new MyClass1();
+myInterface[1]=new YourClass1();
+--------------------
+
+I i1=new MyClass1();
+I i2= new YourClass1();
